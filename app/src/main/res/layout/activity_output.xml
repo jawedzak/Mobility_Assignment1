@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User:"
+        android:textColor="#0F78EA"
         android:textSize="30sp" />
 
     <TextView
@@ -34,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Computer:"
+        android:textColor="#89AE05"
         android:textSize="30sp" />
 
     <TextView
@@ -41,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Result:"
+        android:textColor="#EC0606"
         android:textSize="30sp" />
 
     <Button

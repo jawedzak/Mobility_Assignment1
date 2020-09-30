@@ -27,9 +27,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="40sp"
-        android:textStyle="italic"
-        android:text="Select your choice" />
+        android:text="Select your choice"
+        android:textSize="35sp"
+        android:textStyle="italic" />
 
     <RadioGroup
         android:id="@+id/message_group"
@@ -64,6 +64,7 @@
 
     <Button
         android:id="@+id/play"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#359EF1"

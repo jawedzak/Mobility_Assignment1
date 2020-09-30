@@ -18,15 +18,17 @@ class InputActivity : AppCompatActivity() {
 
         binding.play.setOnClickListener { play() }
     }
+        // this function checks the user input
         private fun play() {
             val choice = when (binding.messageGroup.checkedRadioButtonId) {
-                R.id.rock -> start("rock")
-                R.id.paper -> start("paper")
-                R.id.scissor -> start("scissor")
+                R.id.rock -> start("Rock")
+                R.id.paper -> start("Paper")
+                R.id.scissor -> start("Scissor")
                 else -> start("undefined")
             }
         }
 
+    // this function selects random choice for computer & then get the result
     private fun start(a:String) {
         var computerChoice = ""
         var userChoice = a
@@ -34,36 +36,36 @@ class InputActivity : AppCompatActivity() {
 
         var randomChoice = Random.nextInt(3)
         if (randomChoice == 0) {
-            computerChoice = "rock"
+            computerChoice = "Rock"
         }
         if (randomChoice == 1) {
-            computerChoice = "paper"
+            computerChoice = "Paper"
         }
         if (randomChoice == 2) {
-            computerChoice = "scissor"
+            computerChoice = "Scissor"
         }
 
         // compare the results now
         if (computerChoice == a){
             result = "Tie"
         }
-        if (computerChoice == "paper" && a == "scissor"){
+        if (computerChoice == "Paper" && a == "Scissor"){
+            result = "User"
+        }
+        if (computerChoice == "Scissor" && a == "Paper"){
+            result = "Computer"
+        }
+        if (computerChoice == "Rock" && a == "Paper"){
+            result = "User"
+        }
+        if (computerChoice == "Scissor" && a == "Rock"){
             result = "User WON"
         }
-        if (computerChoice == "scissor" && a == "paper"){
-            result = "Computer WON"
+        if (computerChoice == "Rock" && a == "Scissor") {
+            result = "Computer"
         }
-        if (computerChoice == "rock" && a == "paper"){
-            result = "User WON"
-        }
-        if (computerChoice == "scissor" && a == "rock"){
-            result = "User WON"
-        }
-        if (computerChoice == "rock" && a == "scissor") {
-            result = "Computer WON"
-        }
-        if (computerChoice == "paper" && a == "rock"){
-            result = "Computer WON"
+        if (computerChoice == "Paper" && a == "Rock"){
+            result = "Computer"
         }
         //Toast.makeText(this, choice, Toast.LENGTH_SHORT).show()
 
