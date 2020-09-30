@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".OutputActivity">
 
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="80sp"
+        android:text="Result"
+        android:textColor="#070000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,22 +26,22 @@
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="User" />
+        android:text="User:"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/computer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Computer" />
+        android:text="Computer:"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Result" />
+        android:text="Result:"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/play_again"
