@@ -59,7 +59,7 @@ class InputActivity : AppCompatActivity() {
             result = "User"
         }
         if (computerChoice == "Scissor" && a == "Rock"){
-            result = "User WON"
+            result = "User"
         }
         if (computerChoice == "Rock" && a == "Scissor") {
             result = "Computer"
